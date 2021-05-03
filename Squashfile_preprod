@@ -1,0 +1,12 @@
+metadata:
+  name: Demo Engie
+jobs:
+  yada:
+    runs-on: ssh
+    generator: tm.squashtest.org/tm.generator@v1
+    with:
+      testPlanUuid: bfc56481-2fd9-4dfd-86ea-3e028ab286f8
+      testPlanType: Iteration
+      squashTMUrl: http://squashtm:8080/squash
+      squashTMAutomatedServerLogin: ${{ variables.USER }}
+      squashTMAutomatedServerPassword: ${{ variables.PASSWORD }}
