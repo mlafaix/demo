@@ -6,12 +6,14 @@ node {
     echo 'building'
   }
   stage('QA') {
-    def workflow_id = runSquashWorkflow(
-      workflowPathName:'Squashfile',
-      workflowTimeout: '120S',
-      serverName:'squash-orchestrator'
-    )
-    echo "We just ran The Squash Orchestrator workflow $workflow_id"
+    withCredentials([usernamePassword(credentialsId: 'squash-tm', passwordVariable: 'SQUASHTF_PASSWORD', usernameVariable: 'SQUASHTF_USER')]) {
+      def workflow_id = runSquashWorkflow(
+        workflowPathName:'Squashfile',
+        workflowTimeout: '120S',
+        serverName:'squash-orchestrator'
+      )
+      echo "We just ran The Squash Orchestrator workflow $workflow_id"
+    }
   }
   stage('Notification') {
      echo 'done'   
