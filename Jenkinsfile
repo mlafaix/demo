@@ -9,7 +9,7 @@ node {
     def workflow_id = runSquashWorkflow(
       workflowPathName:'Squashfile',
       workflowTimeout: '120S',
-      serverName:'defaultServer'
+      serverName:'squash-orchestrator'
     )
     echo "We just ran The Squash Orchestrator workflow $workflow_id"
   }
