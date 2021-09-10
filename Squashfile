@@ -5,7 +5,7 @@ jobs:
     runs-on: ssh
     generator: tm.squashtest.org/tm.generator@v1
     with:
-      testPlanUuid: 1ce84d45-f2a4-4129-a50d-c36751dd95ab
+      testPlanUuid: 10456cc2-0e25-4a6d-8286-6254939cbc0c
       testPlanType: Iteration
       squashTMUrl: http://squashtm:8080/squash
       squashTMAutomatedServerLogin: ${{ variables.USER }}
