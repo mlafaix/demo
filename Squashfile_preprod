@@ -1,7 +1,7 @@
 metadata:
-  name: Demo Engie PREPROD
+  name: Demo Robotframework PREPROD
 jobs:
-  yada:
+  my-first-job:
     runs-on: ssh
     generator: tm.squashtest.org/tm.generator@v1
     with:
