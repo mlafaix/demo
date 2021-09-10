@@ -1,7 +1,7 @@
 metadata:
-  name: Demo Engie
+  name: Demo Robotframework
 jobs:
-  yada:
+  job1:
     runs-on: ssh
     generator: tm.squashtest.org/tm.generator@v1
     with:
