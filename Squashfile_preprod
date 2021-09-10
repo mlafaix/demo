@@ -7,6 +7,6 @@ jobs:
     with:
       testPlanUuid: 8ef5d692-efde-4350-9195-834ff2981915
       testPlanType: Iteration
-      squashTMUrl: http://squash-tm:8080/squash
+      squashTMUrl: https://demo.new-forge.squashtest.org/edegenetais-tf2-tm-enterprise/squash-tm
       squashTMAutomatedServerLogin: ${{ variables.USER }}
       squashTMAutomatedServerPassword: ${{ variables.PASSWORD }}
